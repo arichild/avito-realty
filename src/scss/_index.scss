@@ -1,0 +1,180 @@
+.table {
+  &-panel {
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    height: 75px;
+    line-height: 75px;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    color: #515151;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 60px;
+
+    &-logo {
+      line-height: 0;
+      max-width: 240px;
+    }
+
+    &-link {
+      padding-left: 30px;
+      position: relative;
+      color: #515151;
+
+      &::before {
+        content: '';
+        background-image: url(../images/icon/back-link.svg);
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        position: absolute;
+      }
+    }
+
+    &-export {
+      padding-left: 28px;
+      position: relative;
+
+      &::before {
+        content: '';
+        background-image: url(../images/icon/excel-icon.svg);
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        position: absolute;
+      }
+    }
+  }
+
+  &-body {
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #292929;
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-link {
+      display: block;
+      line-height: 0;
+      width: 24px;
+      height: 24px;
+      background: #0BAAFE;
+      border-radius: 5px;
+      position: relative;
+
+
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+    }
+
+    &-head {
+      padding-left: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &-caption {
+      margin-right: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #515151;
+
+      &.left {
+        text-align: left;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-cells {
+      padding: 15px 0;
+      padding-left: 20px;
+      padding-right: 5px;
+      background: #F8F8F8;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-cell {
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.left {
+        text-align: left;
+      }
+    }
+  }
+
+  &-page {
+    padding-top: 40px;
+  }
+}
+
+.column-1 {
+  max-width: 24%;
+  flex: 0 0 24%;
+}
+
+.column-2 {
+  max-width: 18%;
+  flex: 0 0 18%;
+}
+
+.column-3 {
+  max-width: 12%;
+  flex: 0 0 12%;
+}
+
+.column-4 {
+  max-width: 16.3%;
+  flex: 0 0 16.3%;
+}
+
+.column-5 {
+  max-width: 16.6%;
+  flex: 0 0 16.6%;
+}
+
+.column-6 {
+  max-width: 8.4%;
+  flex: 0 0 8.4%;
+}
+
+.column-7 {
+  max-width: 5.5%;
+  flex: 0 0 5.5%;
+}
+
+.column-8 {
+  max-width: calc(100% - 943px);
+  flex: 0 0 calc(100% - 943px);
+}

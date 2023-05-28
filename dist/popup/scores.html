@@ -1,0 +1,38 @@
+<div class="form">
+  <div class="form-logo">
+    <img src="./images/icon/logo.svg" alt="alt">
+  </div>
+
+  <form action="#" class="form-validate">
+    <div class="form-member"><span>Участник:</span> Чугуев Александр Васильевич</div>
+    <div class="form-fields">
+      <div class="form-field">
+        <input type="text" placeholder="Введите количество баллов" name="scores" id="scores">
+      </div>
+    </div>
+
+    <button class="form-btn">Сохранить</button>
+  </form>
+
+  <div class="form-result">
+    <a href="index.html" class="form-back">Вернуться назад</a>
+  </div>
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $.validator.messages.required = 'Пожалуйста, введите данные';
+
+
+      $(".form-validate").validate({
+        errorElement: "span",
+
+        rules: {
+          scores: {
+            required: true,
+            number: true
+          },
+        },
+      });
+    })
+  </script>
+</div>

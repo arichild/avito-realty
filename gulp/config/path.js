@@ -8,8 +8,11 @@ const srcFolder = `./src`;
 export const path = {
   build: {
     html: `${buildFolder}/`,
+    popup: `${buildFolder}/popup/`,
+    css: `${buildFolder}/css/`,
     css: `${buildFolder}/css/`,
     js: `${buildFolder}/js/`,
+    lib: `${buildFolder}/js/`,
     img: `${buildFolder}/images/`,
     fonts: `${buildFolder}/fonts/`,
     htaccess: `${buildFolder}/`,
@@ -17,8 +20,11 @@ export const path = {
 
   src: {
     html: `${srcFolder}/*.html`,
+    popup: `${srcFolder}/popup/*.html`,
     scss: `${srcFolder}/scss/style.scss`,
+    css: `${srcFolder}/css/lib.min.css`,
     js: `${srcFolder}/js/*.js`,
+    lib: `${srcFolder}/js/lib/*.js`,
     img: `${srcFolder}/images/**/*.*`,
     fonts: `${srcFolder}/fonts/*.*`,
     svg: `${srcFolder}/images/svg/*.svg`,
@@ -27,8 +33,11 @@ export const path = {
 
   watch: {
     html: `${srcFolder}/**/*.html`,
+    popup: `${srcFolder}/**/*.html`,
     scss: `${srcFolder}/scss/**/*.scss`,
+    css: `${srcFolder}/css/**/*.scss`,
     js: `${srcFolder}/js/*.js`,
+    lib: `${srcFolder}/js/lib/*.js`,
     img: `${srcFolder}/images/**/*.*`,
     svg: `${srcFolder}/images/svg/*.svg`,
   },
