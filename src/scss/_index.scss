@@ -56,6 +56,15 @@
   }
 
   &-body {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+
+    &-content {
+      width: 1140px;
+    }
+
     &-title {
       font-weight: 700;
       font-size: 20px;
@@ -94,10 +103,7 @@
       font-weight: 400;
       font-size: 14px;
       color: #515151;
-
-      &.left {
-        text-align: left;
-      }
+      text-align: left;
 
       &:last-child {
         margin-right: 0;
@@ -121,15 +127,11 @@
     &-cell {
       font-weight: 500;
       font-size: 14px;
-      text-align: center;
+      text-align: left;
       margin-right: 5px;
 
       &:last-child {
         margin-right: 0;
-      }
-
-      &.left {
-        text-align: left;
       }
     }
   }
@@ -155,26 +157,26 @@
 }
 
 .column-4 {
-  max-width: 16.3%;
-  flex: 0 0 16.3%;
+  max-width: 13.4%;
+  flex: 0 0 13.4%;
 }
 
 .column-5 {
-  max-width: 16.6%;
-  flex: 0 0 16.6%;
+  max-width: 17.9%;
+  flex: 0 0 17.9%;
 }
 
 .column-6 {
-  max-width: 8.4%;
-  flex: 0 0 8.4%;
+  max-width: 9%;
+  flex: 0 0 9%;
 }
 
 .column-7 {
-  max-width: 5.5%;
-  flex: 0 0 5.5%;
+  max-width: 4.5%;
+  flex: 0 0 4.5%;
 }
 
 .column-8 {
-  max-width: calc(100% - 943px);
-  flex: 0 0 calc(100% - 943px);
+  max-width: 4.5%;
+  flex: 0 0 4.5%;
 }
